@@ -1,0 +1,128 @@
+@CHARSET "UTF-8";
+.select_box_one{height:50px;}
+.select_box_one input{height:20px;padding:5px 10px;width: 200px;}
+
+.sbHolder{
+	background-color: #fff;
+	border: solid 1px #ddd;
+	font-size: 15px;
+    font-size:1.5rem;
+	font-weight: normal;
+	height: 30px;
+	position: relative;
+	width: 258px;
+    z-index: 50;
+}
+.sbHolder:focus .sbSelector{
+	
+}
+.sbSelector{
+	display: block;
+	height: 30px;
+	left: 0;
+	line-height: 30px;
+	outline: none;
+	overflow: hidden;
+	position: absolute;
+	text-indent: 10px;
+	top: 0;
+	width: 258px;
+}
+.sbSelector:link, .sbSelector:visited, .sbSelector:hover{
+	color: #333;
+	outline: none;
+	text-decoration: none;
+}
+.sbToggle{
+	background: url(../images/select-icons.png) 0 -116px no-repeat;
+	display: block;
+	height: 30px;
+	outline: none;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 30px;
+}
+.sbToggle:hover{
+	background: url(../images/select-icons.png) 0 -167px no-repeat;
+}
+.sbToggleOpen{
+	background: url(../images/select-icons.png) 0 -16px no-repeat;
+}
+.sbToggleOpen:hover{
+	background: url(../images/select-icons.png) 0 -66px no-repeat;
+}
+.sbHolderDisabled{
+}
+.sbHolderDisabled .sbHolder{
+	
+}
+.sbHolderDisabled .sbToggle{
+	
+}
+.sbOptions{
+	background-color: #fff;
+	border: solid 1px #ddd;
+	list-style: none;
+	left: -1px;
+	margin: 100;
+	padding: 20px 0px;
+	position: absolute;
+	top: 30px;
+	width: 258px;
+	z-index: 1;
+	overflow-y: auto;
+}
+/*option*/
+.sbOptions li{
+	padding: 0 7px;
+}
+.sbOptions a{
+	display: block;
+	outline: none;
+	padding: 1px 0 1px 20px;
+}
+.sbOptions a:link, .sbOptions a:visited{
+	color: #999;
+	text-decoration: none;
+}
+.sbOptions a:hover,
+.sbOptions a:focus,
+.sbOptions a.sbFocus{
+	color: #ff8533;
+}
+.sbOptions li.last a{
+	border-bottom: none;
+}
+.sbOptions .sbDisabled{
+	color: #999;
+	display: block;
+	padding: 7px 0 7px 20px;
+}
+/*optgroup*/
+.sbOptions .sbGroup{
+	color: #333;
+	display: block;
+	padding: 20px 0 7px 20px;
+}
+.sbOptions .sbSub{
+	padding-left: 20px;
+}
+
+/*寬100%*/
+.hundred_select .sbHolder,
+.hundred_select .sbOptions,
+.hundred_select .sbSelector
+{width: 100%;color:#999;font-size:12px;}
+
+/*small*/
+.small_select .sbHolder,
+.small_select .sbOptions,
+.small_select .sbSelector
+{width:150px;color:#999;}
+
+/*mini*/
+.mini_select .sbHolder,
+.mini_select .sbOptions,
+.mini_select .sbSelector
+{width:80px;color:#999;font-size:12px;}
