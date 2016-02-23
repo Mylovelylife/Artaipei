@@ -1,0 +1,531 @@
+<!doctype html>
+<html debug="true" lang="zh_tw">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1200"/>
+<title>artaipei</title><!--網頁標題-->
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/jquery.selectbox.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<!--pinterest_boxs-->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.masonry.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $('.pinterest_boxs').imagesLoaded(function(){
+            $('.pinterest_boxs').masonry({        
+                itemSelector: '.pinterest_content',
+                columnWidth: 300,
+                singleMode: false,
+                animate:true
+            });
+        });
+    });
+</script>
+<!--selectbox-->
+<script type="text/javascript" src="js/jquery.selectbox-0.2.js"></script>
+<script type="text/javascript">
+		$(function () {
+			$(".select_style_one").selectbox();
+		});
+</script>
+<!--top_menu-->
+<script type='text/javascript' src="jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.menu.js"></script>
+<!--gotop-->
+<script type="text/javascript" src="js/jquery.gotop.js"></script>
+<!-- scrollbar -->
+<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+	
+<script>
+	(function($){
+			$(window).load(function(){
+				var amount=Math.max.apply(Math,$("#year_content_right li").map(function(){return $(this).outerWidth(true);}).get());
+				
+				$("#year_content_right").mCustomScrollbar({
+					axis:"x",
+					theme:"inset",
+					advanced:{
+						autoExpandHorizontalScroll:true
+					},
+					scrollButtons:{
+						enable:true,
+						scrollType:"stepped"
+					},
+					keyboard:{scrollType:"stepped"},
+					snapAmount:amount,
+					mouseWheel:{scrollAmount:amount}
+				});
+				
+			});
+	})(jQuery);
+</script>
+
+    
+<body>
+     <header>
+        <div class="top_menu">
+            <div class="box">
+              <a href="" target=""><div class="logo"></div></a>
+              <a href="" target=""><div class="login"></div></a>
+              <a href="" target=""><div class="card"></div></a>
+              <a href="" target=""><div class="car"></div></a>
+              <a href="" target=""><div class="search"></div></a>
+              <a href="" target=""><div class="menu"></div></a> 
+            </div>
+        </div>
+    </header>
+    <section class="content">
+        <nav class="menu_two" >
+                 <ul>
+                       <li><a href="#"><span class="one">簡&nbsp;介</span><span class="two">簡&nbsp;介</span></a></li>
+                       <li><a href="#"><span class="one">代表藝術家</span><span class="two">代表藝術家</span></a></li>
+                       <li><a href="#"><span class="one">年&nbsp;表</span><span class="two">年&nbsp;表</span></a></li>
+                       <li><a href="#"><span class="one">傳記文獻</span><span class="two">傳記文獻</span></a></li>
+                       <li><a href="#"><span class="one">雜&nbsp;誌</span><span class="two">雜&nbsp;誌</span></a></li>
+                </ul>
+        </nav>
+        <div id="year_list">
+                    <li class="list_menu ">
+                        <div class="year_title"></div>
+                        <div class="year_content">
+                            <div class="year_top">
+                                <div class="ps_box color_01" style="margin-left:30px;">
+                                        <a href="" class="showlayer">
+                                            <div class="text">代表藝術家</div>
+                                            <div class="cycle color_01"></div>
+                                            <div class="year_menu_content">
+                                                <div class="menu_line_box">
+                                                    <div class="menu_line color_01"></div>
+                                                </div>
+                                                <div class="year_menu_text">
+                                                    Past exhibitions
+                                                </div> 
+                                            </div>
+                                        </a>
+                                </div>
+                                <div class="ps_box color_02" style="margin-left:60px;">
+                                        <a href="" class="showlayer">
+                                            <div class="text">作品</div>
+                                            <div class="cycle color_02"></div>
+                                            <div class="year_menu_content">
+                                                <div class="menu_line_box">
+                                                    <div class="menu_line color_02"></div>
+                                                </div>
+                                                <div class="year_menu_text">
+                                                    english
+                                                </div> 
+                                            </div>
+                                        </a>
+                                </div>
+                                <div class="ps_box color_03" style="margin-left:90px;">
+                                        <a href="" class="showlayer">
+                                            <div class="text">交易與活動</div>
+                                            <div class="cycle color_03"></div>
+                                            <div class="year_menu_content">
+                                                <div class="menu_line_box">
+                                                    <div class="menu_line color_03"></div>
+                                                </div>
+                                                <div class="year_menu_text">
+                                                    english
+                                                </div> 
+                                            </div>
+                                        </a>
+                                </div>
+                                <div class="ps_box color_04" style="margin-left:120px;">
+                                        <a href="" class="showlayer">
+                                            <div class="text">傳記文獻</div>
+                                            <div class="cycle color_04"></div>
+                                            <div class="year_menu_content">
+                                                <div class="menu_line_box">
+                                                    <div class="menu_line color_04"></div>
+                                                </div>
+                                                <div class="year_menu_text">
+                                                    english
+                                                </div> 
+                                            </div>
+                                        </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                <!--
+                    <li class="list_menu ">
+                        <div class="year_title"></div>
+                        <div class="year_content">
+                            <div class="year_top">
+                                <div class="ps_box color_01" style="margin-left:30px;">
+                                        <a href="" class="showlayer">
+                                            <div class="text">代表藝術家</div>
+                                            <div class="cycle color_01"></div>
+                                            <div class="year_menu_content">
+                                                <div class="menu_line_box">
+                                                    <div class="menu_line color_01"></div>
+                                                </div>
+                                                <div class="year_menu_text">
+                                                    Past exhibitions
+                                                </div> 
+                                            </div>
+                                        </a>
+                                </div>
+                                <div class="ps_box color_02" style="margin-left:60px;">
+                                        <a href="" class="showlayer">
+                                            <div class="text">作品</div>
+                                            <div class="cycle color_02"></div>
+                                            <div class="year_menu_content">
+                                                <div class="menu_line_box">
+                                                    <div class="menu_line color_02"></div>
+                                                </div>
+                                                <div class="year_menu_text">
+                                                    Past exhibitions
+                                                </div> 
+                                            </div>
+                                        </a>
+                                </div>
+                                <div class="ps_box color_03" style="margin-left:90px;">
+                                        <a href="" class="showlayer">
+                                            <div class="text">交易與活動</div>
+                                            <div class="cycle color_03"></div>
+                                            <div class="year_menu_content">
+                                                <div class="menu_line_box">
+                                                    <div class="menu_line color_03"></div>
+                                                </div>
+                                                <div class="year_menu_text">
+                                                    Activities
+                                                </div> 
+                                            </div>
+                                        </a>
+                                </div>
+                                <div class="ps_box color_04" style="margin-left:120px;">
+                                        <a href="" class="showlayer">
+                                            <div class="text">傳記文獻</div>
+                                            <div class="cycle color_04"></div>
+                                            <div class="year_menu_content">
+                                                <div class="menu_line_box">
+                                                    <div class="menu_line color_04"></div>
+                                                </div>
+                                                <div class="year_menu_text">
+                                                    Past exhibitions
+                                                </div> 
+                                            </div>
+                                        </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+-->
+            <div id="year_content_right">
+                    <li class="list_box color_01">
+                        <div class="year_title">戰前 1978~1980</div>
+                        <div class="year_content">
+                            <div class="year_list_btn_box" style="margin-left:250px;"></div>
+                            <ul>
+                                <li>1987</li>
+                                <li>1988</li>
+                            </ul>
+                            <div class="year_top">
+                                <div class="ps_box">
+                                    <div class="text">
+                                        代表藝術家<br>張大千
+                                    </div>
+                                    <div class="photo_box">
+                                        <img src="images/demo_photo/photo_small_02.jpg" alt="">
+                                    </div>
+                                    <div class="cycle color_01"></div>
+                                </div>
+                            </div>
+                            <div class="year_bottom">
+                                <div class="ps_box" style="margin-left:70px;">
+                                    <div class="cycle color_02"></div>
+                                    <div class="photo_box">
+                                        <img src="images/demo_photo/photo_small_03.jpg" alt="">
+                                    </div>
+                                    <div class="text">
+                                        代表藝術家
+                                    </div>   
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                     <li class="list_box color_02">
+                        <div class="year_title">戰前 1978~1980</div>
+                        <div class="year_content">
+                            <ul>
+                                <li>1989</li>
+                                <li>1990</li>
+                            </ul>
+                            <div class="year_top">
+                                <div class="ps_box" >
+                                    <div class="text">
+                                        代表藝術家<br>張大千
+                                    </div>
+                                    <div class="photo_box">
+                                        <img src="images/demo_photo/photo_small_02.jpg" alt="">
+                                    </div>
+                                    <div class="cycle color_01"></div>
+                                </div>
+                            </div>
+                            <div class="year_bottom">
+                                <div class="ps_box" style="margin-left:70px;">
+                                    <div class="cycle color_02"></div>
+                                    <div class="photo_box">
+                                        <img src="images/demo_photo/photo_small_03.jpg" alt="">
+                                    </div>
+                                    <div class="text">
+                                        代表藝術家
+                                    </div>   
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                     <li class="list_box color_03">
+                        <div class="year_title">戰前 1978~1980</div>
+                        <div class="year_content">
+                            <ul>
+                                <li>1991</li>
+                                <li>1992</li>
+                            </ul>
+                            <div class="year_top">
+                                <div class="ps_box" >
+                                    <div class="text">
+                                        代表藝術家<br>張大千
+                                    </div>
+                                    <div class="photo_box">
+                                        <img src="images/demo_photo/photo_small_02.jpg" alt="">
+                                    </div>
+                                    <div class="cycle color_01"></div>
+                                </div>
+                            </div>
+                            <div class="year_bottom">
+                                <div class="ps_box" style="margin-left:70px;">
+                                    <div class="cycle color_02"></div>
+                                    <div class="photo_box">
+                                        <img src="images/demo_photo/photo_small_03.jpg" alt="">
+                                    </div>
+                                    <div class="text">
+                                        代表藝術家
+                                    </div>   
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                     <li class="list_box color_04">
+                        <div class="year_title">1993~</div>
+                        <div class="year_content">
+                            <ul>
+                                <li>1993</li>
+                                <li>1994</li>
+                            </ul>
+                            <div class="year_top">
+                                <div class="ps_box">
+                                    <div class="text">
+                                        代表藝術家<br>張大千
+                                    </div>
+                                    <div class="photo_box">
+                                        <img src="images/demo_photo/photo_small_02.jpg" alt="">
+                                    </div>
+                                    <div class="cycle color_01"></div>
+                                </div>
+                            </div>
+                            <div class="year_bottom">
+                                <div class="ps_box" style="margin-left:70px;">
+                                    <div class="cycle color_02"></div>
+                                    <div class="photo_box">
+                                        <img src="images/demo_photo/photo_small_03.jpg" alt="">
+                                    </div>
+                                    <div class="text">
+                                        代表藝術家
+                                    </div>   
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                     <li class="list_box color_05">
+                        <div class="year_title">1995~</div>
+                        <div class="year_content">
+                            <ul>
+                                <li>1995</li>
+                                <li>1996</li>
+                            </ul>
+                            <div class="year_top">
+                                <div class="ps_box">
+                                    <div class="text">
+                                        代表藝術家<br>張大千
+                                    </div>
+                                    <div class="photo_box">
+                                        <img src="images/demo_photo/photo_small_02.jpg" alt="">
+                                    </div>
+                                    <div class="cycle color_01"></div>
+                                </div>
+                            </div>
+                            <div class="year_bottom">
+                                <div class="ps_box" style="margin-left:70px;">
+                                    <div class="cycle color_02"></div>
+                                    <div class="photo_box">
+                                        <img src="images/demo_photo/photo_small_03.jpg" alt="">
+                                    </div>
+                                    <div class="text">
+                                        代表藝術家
+                                    </div>   
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                     <li class="list_box color_06">
+                        <div class="year_title">1997~</div>
+                        <div class="year_content">
+                            <ul>
+                                <li>1997</li>
+                                <li>1998</li>
+                            </ul>
+                            <div class="year_top">
+                                <div class="ps_box" >
+                                    <div class="text">
+                                        代表藝術家<br>張大千
+                                    </div>
+                                    <div class="photo_box">
+                                        <img src="images/demo_photo/photo_small_02.jpg" alt="">
+                                    </div>
+                                    <div class="cycle color_01"></div>
+                                </div>
+                            </div>
+                            <div class="year_bottom">
+                                <div class="ps_box" style="margin-left:70px;">
+                                    <div class="cycle color_02"></div>
+                                    <div class="photo_box">
+                                        <img src="images/demo_photo/photo_small_03.jpg" alt="">
+                                    </div>
+                                    <div class="text">
+                                        代表藝術家
+                                    </div>   
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                     <li class="list_box color_07">
+                        <div class="year_title">1999~</div>
+                        <div class="year_content">
+                            <ul>
+                                <li>1999</li>
+                                <li>2000</li>
+                            </ul>
+                            <div class="year_top">
+                                <div class="ps_box" >
+                                    <div class="text">
+                                        代表藝術家<br>張大千
+                                    </div>
+                                    <div class="photo_box">
+                                        <img src="images/demo_photo/photo_small_02.jpg" alt="">
+                                    </div>
+                                    <div class="cycle color_01"></div>
+                                </div>
+                            </div>
+                            <div class="year_bottom">
+                                <div class="ps_box" style="margin-left:70px;">
+                                    <div class="cycle color_02"></div>
+                                    <div class="photo_box">
+                                        <img src="images/demo_photo/photo_small_03.jpg" alt="">
+                                    </div>
+                                    <div class="text">
+                                        代表藝術家
+                                    </div>   
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                     <li class="list_box color_08">
+                        <div class="year_title">2001~</div>
+                        <div class="year_content">
+                            <ul>
+                                <li>2001</li>
+                                <li>2002</li>
+                            </ul>
+                            <div class="year_top">
+                                <div class="ps_box">
+                                    <div class="text">
+                                        代表藝術家<br>張大千
+                                    </div>
+                                    <div class="photo_box">
+                                        <img src="images/demo_photo/photo_small_02.jpg" alt="">
+                                    </div>
+                                    <div class="cycle color_01"></div>
+                                </div>
+                            </div>
+                            <div class="year_bottom">
+                                <div class="ps_box" style="margin-left:70px;">
+                                    <div class="cycle color_02"></div>
+                                    <div class="photo_box">
+                                        <img src="images/demo_photo/photo_small_03.jpg" alt="">
+                                    </div>
+                                    <div class="text">
+                                        代表藝術家
+                                    </div>   
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                     <li class="list_box color_09">
+                        <div class="year_title">2003~</div>
+                        <div class="year_content">
+                            <ul>
+                                <li>2003</li>
+                                <li>2004</li>
+                            </ul>
+                            <div class="year_top">
+                                <div class="ps_box">
+                                    <div class="text">
+                                        代表藝術家<br>張大千
+                                    </div>
+                                    <div class="photo_box">
+                                        <img src="images/demo_photo/photo_small_02.jpg" alt="">
+                                    </div>
+                                    <div class="cycle color_01"></div>
+                                </div>
+                            </div>
+                            <div class="year_bottom">
+                                <div class="ps_box" style="margin-left:70px;">
+                                    <div class="cycle color_02"></div>
+                                    <div class="photo_box">
+                                        <img src="images/demo_photo/photo_small_03.jpg" alt="">
+                                    </div>
+                                    <div class="text">
+                                        代表藝術家
+                                    </div>   
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+			</div>
+        <div class="clear"></div>
+    </section>
+
+</body>
+	
+	 <footer>
+      <div class="footer_link">
+          <div class="box">
+              <a class="text_mode" href="#"><span class="one">聯絡</span><span class="two">Contact</span></a>
+              <a class="text_mode" href="#"><span class="one">蒐集</span><span class="two">蒐集</span></a>
+              <a class="text_mode" href="#"><span class="one">通識</span><span class="two">通識</span></a>
+              <a class="text_mode" href="#"><span class="one">關於</span><span class="two">關於</span></a>
+              <a class="text_mode" href="#"><span class="one">成為夥伴</span><span class="two">成為夥伴</span></a>
+              <a class="text_mode" href="#"><span class="one">隱私權</span><span class="two">隱私權</span></a>
+              <a class="text_mode" href="#"><span class="one">訂閱/取消電子報</span><span class="two">訂閱/取消電子報</span></a>
+              <div class="mail_input_box">mail<input type="text" class="mail_input"></div>
+          </div>
+      </div>
+      <div class="copyright">
+          <div class="box">
+              <div class="text">© 2015 artapei 版權所有</div>
+              <a href="" target=""><div class="yt"></div></a>  
+              <a href="" target=""><div class="tw"></div></a>
+              <a href="" target=""><div class="google"></div></a>
+              <a href="" target=""><div class="fb"></div></a>
+          </div>
+      </div>
+    </footer>
+
+</html>

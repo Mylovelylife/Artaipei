@@ -1,0 +1,177 @@
+<!doctype html>
+<html debug="true" lang="zh_tw">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1200"/>
+<title>artaipei</title><!--網頁標題-->
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/jquery.selectbox.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<!--pinterest_boxs-->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.masonry.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $('.pinterest_boxs').imagesLoaded(function(){
+            $('.pinterest_boxs').masonry({        
+                itemSelector: '.pinterest_content',
+                columnWidth: 300,
+                singleMode: false,
+                animate:true
+            });
+        });
+    });
+</script>
+<!--selectbox-->
+<script type="text/javascript" src="js/jquery.selectbox-0.2.js"></script>
+<script type="text/javascript">
+		$(function () {
+			$(".select_style_one").selectbox();
+		});
+</script>
+<!--top_menu-->
+<script type='text/javascript' src="jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.menu.js"></script>
+<!--gotop-->
+<script type="text/javascript" src="js/jquery.gotop.js"></script>   
+    
+<body>
+     <header>
+        <div class="top_menu">
+            <div class="box">
+              <a href="" target=""><div class="logo"></div></a>
+              <a href="" target=""><div class="login"></div></a>
+              <a href="" target=""><div class="card"></div></a>
+              <a href="" target=""><div class="car"></div></a>
+              <a href="" target=""><div class="search"></div></a>
+              <a href="" target=""><div class="menu"></div></a> 
+            </div>
+        </div>
+    </header>
+    <div id="menu_top_bar">
+                <nav class="menu_one">
+                     <ul>
+                       <li><a href="#"><span class="one">概&nbsp;觀</span><span class="two">Overview</span></a></li>
+                       <li><a href="#"><span class="one">作&nbsp;品</span><span class="two">Works</span></a></li>
+                       <li><a href="#"><span class="one">簡&nbsp;歷</span><span class="two">Biography</span></a></li>
+                       <li><a href="#"><span class="one">交易紀錄</span><span class="two">Artprice</span></a></li>
+                       <li><a href="#"><span class="one">代&nbsp;理</span><span class="two">Proxy</span></a></li>
+                       <li><a href="#"><span class="one">活&nbsp;動</span><span class="two">Activities</span></a></li>
+                       <li><a href="#"><span class="one">相關報導</span><span class="two">News</span></a></li>
+                       <li><a href="#"><span class="one">相關藝術家</span><span class="two">Emerging Art</span></a></li>
+                    </ul>
+                  </nav>
+    </div>
+    <section class="content">
+        <nav class="menu_two">
+                <ul>
+                    <li><a href="#"><span class="one">概&nbsp;觀</span><span class="two">Overview</span></a></li>
+                    <li><a href="#"><span class="one">作&nbsp;品</span><span class="two">Works</span></a></li>
+                    <li><a href="#"><span class="one">簡&nbsp;歷</span><span class="two">Biography</span></a></li>
+                    <li><a href="#"><span class="one">交易紀錄</span><span class="two">Artprice</span></a></li>
+                    <li><a href="#"><span class="one">代&nbsp;理</span><span class="two">Proxy</span></a></li>
+                    <li><a href="#"><span class="one">活&nbsp;動</span><span class="two">Activities</span></a></li>
+                    <li><a href="#"><span class="one">相關報導</span><span class="two">News</span></a></li>
+                    <li><a href="#"><span class="one">相關藝術家</span><span class="two">Emerging Art</span></a></li>
+                </ul>
+        </nav>
+        <!--活動-->
+        <div class="box" style="width:925px;">
+            <div class="select_box_one margin_top_bottom_middle">
+                <div class="float_right">
+                    <select name="select_works_all" class="select_style_one" tabindex="1">
+                        <option value="">全部</option>
+                            <option value="1">作品(number)</option>
+                            <option value="2">活動</option>
+                            <option value="3">典藏與得獎</option>
+                            <option value="4">出版品</option>
+                            <option value="5">文獻</option>
+                    </select>
+                </div> 
+            </div>
+        </div>
+        <div class="box float_box">
+            <div class="year_box">
+                <div class="year"><a class="active">2014</a></div>
+                <div class="year">2013</div>
+                <div class="year">2012</div>
+                <div class="year">2010</div>
+                <div class="year">2009</div>
+                <div class="year">2008</div>
+                <div class="year">2007</div>
+                <div class="year">2006</div>
+                
+            </div>
+            <div class="year_about">
+                <div class="year_about_row">
+                    <div class="year_about_grid gray_dark" style="width:120px">02/04 sunday</div>
+                    <div class="year_about_grid" style="width:120px">
+                        <div class="photo"></div>
+                    </div>
+                    <div class="year_about_grid" style="width: 500px">
+                        <span class="gray_dark">死亡</span>
+                        <div class="text_hidden">
+                            張大千，1899年5月10日生，1983年4月2日逝世，最早本名張正則，後改名張援、張諠，小名李，號李爰，別署大千居士、下里港人、齋名大風起兮，中國當代知名藝術家，四川內江人, 祖籍四川省映秀。因其詩、書、畫與齊白石、溥心畬齊名，故又並稱為「南張北齊」和「南張北溥」。與黃君璧、溥心畬以「渡海三家」齊名。廿多歲便蓄著一把大鬍子，成為張大千日後的特有標誌。曾與齊白石、徐悲鴻、黃君璧、黃賓虹、溥儒、郎靜山等及西班牙抽象派畫家畢卡索交遊切磋。
+                        </div>
+                    </div>
+                </div>
+                
+                 <div class="year_about_row">
+                    <div class="year_about_grid gray_dark" style="width:120px">02/04 sunday</div>
+                    <div class="year_about_grid" style="width:120px">
+                        <div class="photo"></div>
+                    </div>
+                    <div class="year_about_grid" style="width: 500px">
+                        <span class="gray_dark">死亡</span>
+                        <div class="text_hidden">
+                            張大千，1899年5月10日生，1983年4月2日逝世，最早本名張正則，後改名張援、張諠，小名李，號李爰，別署大千居士、下里港人、齋名大風起兮，中國當代知名藝術家，四川內江人, 祖籍四川省映秀。因其詩、書、畫與齊白石、溥心畬齊名，故又並稱為「南張北齊」和「南張北溥」。與黃君璧、溥心畬以「渡海三家」齊名。廿多歲便蓄著一把大鬍子，成為張大千日後的特有標誌。曾與齊白石、徐悲鴻、黃君璧、黃賓虹、溥儒、郎靜山等及西班牙抽象派畫家畢卡索交遊切磋。
+                        </div>
+                    </div>
+                </div>
+                
+                 <div class="year_about_row">
+                    <div class="year_about_grid gray_dark" style="width:120px">02/04 sunday</div>
+                    <div class="year_about_grid" style="width:120px">
+                        <div class="photo"></div>
+                    </div>
+                    <div class="year_about_grid" style="width: 500px">
+                        <span class="gray_dark">死亡</span>
+                        <div class="text_hidden">
+                            張大千，1899年5月10日生，1983年4月2日逝世，最早本名張正則，後改名張援、張諠，小名李，號李爰，別署大千居士、下里港人、齋名大風起兮，中國當代知名藝術家，四川內江人, 祖籍四川省映秀。因其詩、書、畫與齊白石、溥心畬齊名，故又並稱為「南張北齊」和「南張北溥」。與黃君璧、溥心畬以「渡海三家」齊名。廿多歲便蓄著一把大鬍子，成為張大千日後的特有標誌。曾與齊白石、徐悲鴻、黃君璧、黃賓虹、溥儒、郎靜山等及西班牙抽象派畫家畢卡索交遊切磋。
+                        </div>
+                    </div>
+                </div>
+            </div>
+ 
+        </div>
+        
+    <div id="gotop"></div>
+    </section>
+
+</body>
+    <footer>
+      <div class="footer_link">
+          <div class="box">
+              <a class="text_mode" href="#"><span class="one">聯絡</span><span class="two">Contact</span></a>
+              <a class="text_mode" href="#"><span class="one">蒐集</span><span class="two">蒐集</span></a>
+              <a class="text_mode" href="#"><span class="one">通識</span><span class="two">通識</span></a>
+              <a class="text_mode" href="#"><span class="one">關於</span><span class="two">關於</span></a>
+              <a class="text_mode" href="#"><span class="one">成為夥伴</span><span class="two">成為夥伴</span></a>
+              <a class="text_mode" href="#"><span class="one">隱私權</span><span class="two">隱私權</span></a>
+              <a class="text_mode" href="#"><span class="one">訂閱/取消電子報</span><span class="two">訂閱/取消電子報</span></a>
+              <div class="mail_input_box">mail<input type="text" class="mail_input"></div>
+          </div>
+      </div>
+      <div class="copyright">
+          <div class="box">
+              <div class="text">© 2015 artapei 版權所有</div>
+              <a href="" target=""><div class="yt"></div></a>  
+              <a href="" target=""><div class="tw"></div></a>
+              <a href="" target=""><div class="google"></div></a>
+              <a href="" target=""><div class="fb"></div></a>
+          </div>
+      </div>
+    </footer>
+
+</html>

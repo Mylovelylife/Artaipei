@@ -1,0 +1,325 @@
+<!doctype html>
+<html debug="true" lang="zh_tw">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1200"/>
+<title>artaipei</title><!--網頁標題-->
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/jquery.selectbox.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<!--pinterest_boxs-->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.masonry.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $('.pinterest_boxs').imagesLoaded(function(){
+            $('.pinterest_boxs').masonry({        
+                itemSelector: '.pinterest_content',
+                columnWidth: 300,
+                singleMode: false,
+                animate:true
+            });
+        });
+    });
+</script>
+<!--selectbox-->
+<script type="text/javascript" src="js/jquery.selectbox-0.2.js"></script>
+<script type="text/javascript">
+		$(function () {
+			$(".select_style_one").selectbox();
+		});
+</script>
+<!--top_menu-->
+<script type='text/javascript' src="jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.menu.js"></script>
+<!--gotop-->
+<script type="text/javascript" src="js/jquery.gotop.js"></script>   
+    
+<body>
+<div class="mpf_zhezhao" id="zhezhao"></div>
+<div class="mpf_content">
+<div class="painting_price mpf_login" style="width:1000px;">
+      <ipunt type="button" class="btclose" id="btclose_two">X</ipunt>
+      <h3>個人畫價走勢圖</h3>
+      <div class="line_03" style="margin:10px 0;"></div>
+    
+      <div class="left">  
+          <div class="tabs">
+               <div class="tab">
+                   <input type="radio" id="tab-1" name="tab-group-1" checked>
+                   <label for="tab-1">交易價</label>
+
+                   <div class="tab_content">
+                       <div class="table">
+                            <div class="thead">
+                                <div class="th">年度</div>
+                                <div class="td">每號碼單價</div>
+                            </div>
+                            <div class="tr">
+                                <div class="th">1999</div>
+                                <div class="td">NT15,000.-</div>
+                            </div>
+                             <div class="tr">
+                                <div class="th">1999</div>
+                                <div class="td">NT15,000.-</div>
+                            </div>
+                             <div class="tr">
+                                <div class="th">1999</div>
+                                <div class="td">NT15,000.-</div>
+                            </div>
+                             <div class="tr">
+                                <div class="th">1999</div>
+                                <div class="td">NT15,000.-</div>
+                            </div>
+                             <div class="tr">
+                                <div class="th">1999</div>
+                                <div class="td">NT15,000.-</div>
+                            </div>
+                             <div class="tr">
+                                <div class="th">1999</div>
+                                <div class="td">NT15,000.-</div>
+                            </div>
+                             <div class="tr">
+                                <div class="th">1999</div>
+                                <div class="td">NT15,000.-</div>
+                            </div>
+                           <div class="tr">
+                                <div class="th">1999</div>
+                                <div class="td">NT15,000.-</div>
+                            </div>
+                             <div class="tr">
+                                <div class="th">1999</div>
+                                <div class="td">NT15,000.-</div>
+                            </div>
+                             <div class="tr">
+                                <div class="th">1999</div>
+                                <div class="td">NT15,000.-</div>
+                            </div>
+                             <div class="tr">
+                                <div class="th">1999</div>
+                                <div class="td">NT15,000.-</div>
+                            </div>
+                        </div>  
+                   </div> 
+               </div>
+
+               <div class="tab">
+                   <input type="radio" id="tab-2" name="tab-group-1">
+                   <label for="tab-2">牌價</label>
+
+                   <div class="tab_content">
+                       <div class="table">
+                            <div class="thead">
+                                <div class="th">年度</div>
+                                <div class="td">每號碼單價</div>
+                            </div>
+                            <div class="tr">
+                                <div class="th">1999</div>
+                                <div class="td">NT11,000.-</div>
+                            </div>
+                             <div class="tr">
+                                <div class="th">1999</div>
+                                <div class="td">NT12,000.-</div>
+                            </div>
+                             <div class="tr">
+                                <div class="th">1999</div>
+                                <div class="td">NT14,000.-</div>
+                            </div>
+                             <div class="tr">
+                                <div class="th">1999</div>
+                                <div class="td">NT15,000.-</div>
+                            </div>
+                             <div class="tr">
+                                <div class="th">1999</div>
+                                <div class="td">NT15,000.-</div>
+                            </div>
+                             <div class="tr">
+                                <div class="th">1999</div>
+                                <div class="td">NT15,000.-</div>
+                            </div>
+                             <div class="tr">
+                                <div class="th">1999</div>
+                                <div class="td">NT15,000.-</div>
+                            </div>
+                           <div class="tr">
+                                <div class="th">1999</div>
+                                <div class="td">NT15,000.-</div>
+                            </div>
+                             <div class="tr">
+                                <div class="th">1999</div>
+                                <div class="td">NT15,000.-</div>
+                            </div>
+                             <div class="tr">
+                                <div class="th">1999</div>
+                                <div class="td">NT15,000.-</div>
+                            </div>
+                             <div class="tr">
+                                <div class="th">1999</div>
+                                <div class="td">NT15,000.-</div>
+                            </div>
+                        </div> 
+                   </div> 
+               </div>
+
+                <div class="tab">
+                   <input type="radio" id="tab-3" name="tab-group-1">
+                   <label for="tab-3">拍賣價</label>
+
+                   <div class="tab_content">
+                       <div class="table">
+                            <div class="thead">
+                                <div class="th">年度</div>
+                                <div class="td">每號碼單價</div>
+                            </div>
+                            <div class="tr">
+                                <div class="th">1999</div>
+                                <div class="td">NT25,000.-</div>
+                            </div>
+                             <div class="tr">
+                                <div class="th">1999</div>
+                                <div class="td">NT25,000.-</div>
+                            </div>
+                             <div class="tr">
+                                <div class="th">1999</div>
+                                <div class="td">NT12,000.-</div>
+                            </div>
+                             <div class="tr">
+                                <div class="th">1999</div>
+                                <div class="td">NT15,000.-</div>
+                            </div>
+                             <div class="tr">
+                                <div class="th">1999</div>
+                                <div class="td">NT15,000.-</div>
+                            </div>
+                             <div class="tr">
+                                <div class="th">1999</div>
+                                <div class="td">NT15,000.-</div>
+                            </div>
+                             <div class="tr">
+                                <div class="th">1999</div>
+                                <div class="td">NT15,000.-</div>
+                            </div>
+                           <div class="tr">
+                                <div class="th">1999</div>
+                                <div class="td">NT15,000.-</div>
+                            </div>
+                             <div class="tr">
+                                <div class="th">1999</div>
+                                <div class="td">NT15,000.-</div>
+                            </div>
+                             <div class="tr">
+                                <div class="th">1999</div>
+                                <div class="td">NT15,000.-</div>
+                            </div>
+                             <div class="tr">
+                                <div class="th">1999</div>
+                                <div class="td">NT15,000.-</div>
+                            </div>
+                        </div> 
+                   </div> 
+               </div>
+        </div>
+        
+        <div class="number">共 35 筆資料</div>
+      </div> 
+    
+      <div class="right">
+          <div class="price_graph_one">
+              <div class="explain_box">
+                   <div class="explain">
+                        artaipei<br>2015-7-28
+                        <ul>
+                        <li class="e_01">拍賣價</li>
+                        <li class="e_02">交易價</li>
+                        <li class="e_03">牌價</li>
+                        </ul>
+                    </div>
+                <div class="nt">NT</div> 
+              </div>
+              <div class="formula">
+                 <div class="formula_run">
+                    <div class="cycle color_01"></div>
+                    <div class="cycle color_02"></div>
+                    <div class="cycle color_03"></div> 
+                 </div>
+                 <div class="under_number">
+                 <ul>
+                    <li>0</li>
+                    <li>100,000</li>
+                    <li>200,000</li>
+                    <li>300,000</li>
+                    <li>400,000</li>
+                    <li>500,000</li>
+                </ul>
+             </div>
+              </div>
+              <div class="vertical">
+                <ul>
+                    <li>1989</li>
+                    <li>1998</li>
+                    <li>1987</li>
+                    <li>1986</li>
+                    <li>1985</li>
+                    <li>1984</li>
+                    <li>1983</li>
+                    <li>1982</li>
+                    <li>1981</li>
+                    <li>1980</li>
+                    <li>1979</li>
+                    <li>1978</li>
+                    <li>1977</li>
+                </ul>
+              </div>
+              <div class="clear"></div>
+          </div>
+          <div class="text_01">
+                  <ol>
+                    <li>畫價（牌價）指的是作品進入初級市場的單價，不含特殊尺寸</li>
+                    <li>交易價是作品實際交易的單價均值</li>
+                    <li>拍賣價是作在拍賣市場成交的單價均值</li>
+                  </ol>
+          </div>
+      </div>
+    <div class="clear"></div>
+    </div>
+</div>
+     <header>
+        <div class="top_menu">
+            <div class="box">
+              <a href="" target=""><div class="logo"></div></a>
+              <a href="" target=""><div class="login"></div></a>
+              <a href="" target=""><div class="card"></div></a>
+              <a href="" target=""><div class="car"></div></a>
+              <a href="" target=""><div class="search"></div></a>
+              <a href="" target=""><div class="menu"></div></a> 
+            </div>
+        </div>
+    </header>
+    <section class="content"></section>
+</body>
+  <footer>
+      <div class="footer_link">
+          <div class="box">
+              <a class="text_mode" href="#"><span class="one">聯絡</span><span class="two">Contact</span></a>
+              <a class="text_mode" href="#"><span class="one">蒐集</span><span class="two">蒐集</span></a>
+              <a class="text_mode" href="#"><span class="one">通識</span><span class="two">通識</span></a>
+              <a class="text_mode" href="#"><span class="one">關於</span><span class="two">關於</span></a>
+              <a class="text_mode" href="#"><span class="one">成為夥伴</span><span class="two">成為夥伴</span></a>
+              <a class="text_mode" href="#"><span class="one">隱私權</span><span class="two">隱私權</span></a>
+              <a class="text_mode" href="#"><span class="one">訂閱/取消電子報</span><span class="two">訂閱/取消電子報</span></a>
+              <div class="mail_input_box">mail<input type="text" class="mail_input"></div>
+          </div>
+      </div>
+      <div class="copyright">
+          <div class="box">
+              <div class="text">© 2015 artapei 版權所有</div>
+              <a href="" target=""><div class="yt"></div></a>  
+              <a href="" target=""><div class="tw"></div></a>
+              <a href="" target=""><div class="google"></div></a>
+              <a href="" target=""><div class="fb"></div></a>
+          </div>
+      </div>
+    </footer>
+
+</html>

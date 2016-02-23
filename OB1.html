@@ -1,0 +1,353 @@
+<!doctype html>
+<html debug="true" lang="zh_tw">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1200"/>
+<title>artaipei</title><!--網頁標題-->
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/jquery.selectbox.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<!--pinterest_boxs-->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.masonry.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $('.pinterest_boxs').imagesLoaded(function(){
+            $('.pinterest_boxs').masonry({        
+                itemSelector: '.pinterest_content',
+                columnWidth: 300,
+                singleMode: false,
+                animate:true
+            });
+        });
+    });
+</script>
+<!--selectbox-->
+<script type="text/javascript" src="js/jquery.selectbox-0.2.js"></script>
+<script type="text/javascript">
+		$(function () {
+			$(".select_style_one").selectbox();
+		});
+</script>
+<!--top_menu-->
+<script type='text/javascript' src="jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.menu.js"></script>
+<!--gotop-->
+<script type="text/javascript" src="js/jquery.gotop.js"></script>   
+    
+<body>
+     <header>
+        <div class="top_menu">
+            <div class="box">
+              <a href="" target=""><div class="logo"></div></a>
+              <a href="" target=""><div class="login"></div></a>
+              <a href="" target=""><div class="card"></div></a>
+              <a href="" target=""><div class="car"></div></a>
+              <a href="" target=""><div class="search"></div></a>
+              <a href="" target=""><div class="menu"></div></a> 
+            </div>
+        </div>
+    </header>
+    <section class="content">
+        <div class="slider_photo">
+          <div class="photo_box"></div>
+          <div class="back_btn"></div>
+          <div class="next_btn"></div>
+        </div>
+        <div class="slider_photo_information">
+            <h1>迪拜藝術博覽會</h1>
+                香港, 南畫廊<br>香港九龍彌敦道9號<br>2015 . 10 . 12 -  2015 . 3 . 16<br>
+            <div class="follow_btn">
+                <div class="follow"></div>
+            </div>
+            <div class="text_box">
+             一般類別下的40歲以下的2000年前後創造了當代藝術家的當代藝術作品。除了年輕的藝術家和較新的工程，類別還包括藝術家誰是相對不足的確認，但在大多數情況下被認為是路徑臨界和/或市場接受上。
+            </div>
+        </div>
+
+        <!--作品-->
+        <div class="box">
+            <div class="select_box_one">
+                <div class="float_right">
+                    <select name="select_works_all" class="select_style_one" tabindex="1">
+                        <option value="">全部</option>
+                        <optgroup label="材質">
+                            <option value="1">繪畫(number)</option>
+                            <option value="2">雕塑</option>
+                            <option value="3">畫廊</option>
+                        </optgroup>
+                        <optgroup label="畫廊">
+                            <option value="4">南畫廊</option>
+                            <option value="5">畫廊邁克爾·揚森</option>
+                            <option value="6">GALLERI Brandstrup</option>
+                            <option value="7">蘇珊Vielmetter洛杉磯項目</option>
+                        </optgroup>
+                        <optgroup label="機構">
+                            <option value="8">北畫會</option>
+                            <option value="9">洛杉磯游牧司</option>
+                        </optgroup>
+                        <optgroup label="年代">
+                            <option value="11">北畫會</option>
+                        </optgroup>
+                        <optgroup label="服務">
+                            <option value="10">購買</option>
+                            <option value="11">詢價</option>
+                            <option value="12">聯絡</option>
+                            <option value="13">租賃</option>
+                            <option value="14">已售</option>
+                        </optgroup>
+                    </select>
+                </div>
+                
+                <div class="float_right">
+                    <select name="select_works_sequence" class="select_style_one" tabindex="1">
+                            <option value="1">價錢由高到低</option>
+                            <option value="2">價錢由低到高</option>
+                    </select>
+                </div>
+                  
+            </div>
+        </div>
+         <div class="pinterest_boxs">
+                <div class="pinterest_content">
+                     <div class="photo">
+                         <a href="" target=""><div class="heart"></div></a>
+                         <img src="images/demo_photo/photo_02.jpg" alt="">
+                    </div>
+                     <div class="text_box">
+                            <a href=""><div class="name">張庭鈞<span class="margin_left_small">Chang Ting Chun</span></div></a>
+                            台北, 1920~2015<br><span class="gray_normal" ><a href="" >Nan Gallery</a></span><br>$30,000
+                    </div>
+                    <a href="" target=""><div class="text_btn_one">購&nbsp;&nbsp;&nbsp;買</div></a>
+                    <div class="clear"></div>
+                </div>
+                <div class="pinterest_content">
+                     <div class="photo">
+                         <a href="" target=""><div class="heart"></div></a>
+                         <img src="images/demo_photo/photo_01.jpg" alt="">
+                    </div>
+                     <div class="text_box">
+                            <a href=""><div class="name">張庭鈞<span class="margin_left_small">Chang Ting Chun</span></div></a>
+                            台北, 1920~2015<br><span class="gray_normal" ><a href="" >Nan Gallery</a></span><br>$30,000
+                    </div>
+                    <a href="" target=""><div class="text_btn_one">購&nbsp;&nbsp;&nbsp;買</div></a>
+                    <div class="clear"></div>
+                </div>
+                <div class="pinterest_content">
+                     <div class="photo">
+                         <a href="" target=""><div class="heart"></div></a>
+                         <img src="images/demo_photo/photo_04.jpg" alt="">
+                    </div>
+                     <div class="text_box">
+                            <a href=""><div class="name">張庭鈞<span class="margin_left_small">Chang Ting Chun</span></div></a>
+                            台北, 1920~2015<br><span class="gray_normal" ><a href="" >Nan Gallery</a></span><br>$30,000
+                    </div>
+                    <a href="" target=""><div class="text_btn_one">購&nbsp;&nbsp;&nbsp;買</div></a>
+                    <div class="clear"></div>
+                </div>
+                 <div class="pinterest_content">
+                     <div class="photo">
+                         <a href="" target=""><div class="heart"></div></a>
+                         <img src="images/demo_photo/photo_01.jpg" alt="">
+                    </div>
+                     <div class="text_box">
+                            <a href=""><div class="name">張庭鈞<span class="margin_left_small">Chang Ting Chun</span></div></a>
+                            台北, 1920~2015<br><span class="gray_normal" ><a href="" >Nan Gallery</a></span><br>$30,000
+                    </div>
+                     <a href="" target=""><div class="text_btn_one">購&nbsp;&nbsp;&nbsp;買</div></a>
+                    <div class="clear"></div>
+                </div>
+                <div class="pinterest_content">
+                     <div class="photo">
+                         <a href="" target=""><div class="heart"></div></a>
+                         <img src="images/demo_photo/photo_01.jpg" alt="">
+                    </div>
+                     <div class="text_box">
+                            <a href=""><div class="name">張庭鈞<span class="margin_left_small">Chang Ting Chun</span></div></a>
+                            台北, 1920~2015<br><span class="gray_normal" ><a href="" >Nan Gallery</a></span><br>$30,000
+                    </div>
+                    <a href="" target=""><div class="text_btn_one">購&nbsp;&nbsp;&nbsp;買</div></a>
+                    <div class="clear"></div>
+                </div>
+                <div class="pinterest_content">
+                     <div class="photo">
+                         <a href="" target=""><div class="heart"></div></a>
+                         <img src="images/demo_photo/photo_01.jpg" alt="">
+                    </div>
+                     <div class="text_box">
+                            <a href=""><div class="name">張庭鈞<span class="margin_left_small">Chang Ting Chun</span></div></a>
+                            台北, 1920~2015<br><span class="gray_normal" ><a href="" >Nan Gallery</a></span><br>$30,000
+                    </div>
+                    <a href="" target=""><div class="text_btn_one">購&nbsp;&nbsp;&nbsp;買</div></a>
+                    <div class="clear"></div>
+                </div>
+                <div class="pinterest_content">
+                     <div class="photo">
+                         <a href="" target=""><div class="heart"></div></a>
+                         <img src="images/demo_photo/photo_03.jpg" alt="">
+                    </div>
+                     <div class="text_box">
+                            <a href=""><div class="name">張庭鈞<span class="margin_left_small">Chang Ting Chun</span></div></a>
+                            台北, 1920~2015<br><span class="gray_normal" ><a href="" >Nan Gallery</a></span><br>$30,000
+                    </div>
+                    <a href="" target=""><div class="text_btn_one">購&nbsp;&nbsp;&nbsp;買</div></a>
+                    <div class="clear"></div>
+                </div>
+               <div class="pinterest_content">
+                     <div class="photo">
+                         <a href="" target=""><div class="heart"></div></a>
+                         <img src="images/demo_photo/photo_02.jpg" alt="">
+                    </div>
+                     <div class="text_box">
+                            <a href=""><div class="name">張庭鈞<span class="margin_left_small">Chang Ting Chun</span></div></a>
+                            台北, 1920~2015<br><span class="gray_normal" ><a href="" >Nan Gallery</a></span><br>$30,000
+                    </div>
+                   <a href="" target=""><div class="text_btn_one">購&nbsp;&nbsp;&nbsp;買</div></a>
+                    <div class="clear"></div>
+                </div>
+	     </div>
+        <h3 class="text_btn"><a href="#">VIEW&nbsp;ALL&nbsp;(59)</a></h3>
+        <div class="line_02"></div>
+        
+        <!--參展藝術家-->
+        <div class="box">
+            <h1 class="text_center">參展藝術家</h1>
+                 <div class="row_01">
+                                  <div class="grid">
+                                      <div class="photo"><img src="" alt=""></div>
+                                      <div class="text_box">
+                                          <span class="gray_dark">張庭鈞</span>
+                                          <span class="margin_left_small">Chang Ting Chun</span><br>
+                                          台北, 1920~2015
+                                      </div>
+                                  </div>
+
+                                   <div class="grid">
+                                      <div class="photo"><img src="" alt=""></div>
+                                      <div class="text_box">
+                                          <span class="gray_dark">張庭鈞</span>
+                                          <span class="margin_left_small">Chang Ting Chun</span><br>
+                                          台北, 1920~2015
+                                      </div>
+                                  </div>
+                                   <div class="grid">
+                                      <div class="photo"><img src="" alt=""></div>
+                                      <div class="text_box">
+                                          <span class="gray_dark">張庭鈞</span>
+                                          <span class="margin_left_small">Chang Ting Chun</span><br>
+                                          台北, 1920~2015
+                                      </div>
+                                  </div>
+                                   <div class="grid">
+                                      <div class="photo"><img src="" alt=""></div>
+                                      <div class="text_box">
+                                          <span class="gray_dark">張庭鈞</span>
+                                          <span class="margin_left_small">Chang Ting Chun</span><br>
+                                          台北, 1920~2015
+                                      </div>
+                                  </div>
+                                   <div class="grid">
+                                      <div class="photo"><img src="" alt=""></div>
+                                      <div class="text_box">
+                                          <span class="gray_dark">張庭鈞</span>
+                                          <span class="margin_left_small">Chang Ting Chun</span><br>
+                                          台北, 1920~2015
+                                      </div>
+                                  </div>
+                              <div class="clear"></div>
+                        </div>
+        </div>
+        <h3 class="text_btn"><a href="#">VIEW&nbsp;ALL&nbsp;(59)</a></h3>
+        <div class="line_02"></div>
+        
+         <!--相關報導-->
+        <div class="box">
+            <h1 class="text_center">相關報導</h1>
+                <div class="artists_news">
+                    <div class="float_box">
+                        <div class="photo"></div>
+                        2015 - 04-16  13：07
+                        <h2>在山水畫與風景畫之間： 林風眠藝術初探 / 張大千</h2>
+                        <p>南畫廊</p>
+                        <div class="follow_btn">
+                            <div class="twitter"></div><div class="google"></div><div class="fb"></div>
+                        </div>
+                    </div>
+                    <div class="float_box">
+                        <div class="photo"></div>
+                        2015 - 04-16  13：07
+                        <h2>在山水畫與風景畫之間： 林風眠藝術初探 / 張大千</h2>
+                        <p>南畫廊</p>
+                        <div class="follow_btn">
+                            <div class="twitter"></div><div class="google"></div><div class="fb"></div>
+                        </div>
+                    </div>
+                    <div class="float_box">
+                        <div class="photo"></div>
+                        2015 - 04-16  13：07
+                        <h2>在山水畫與風景畫之間： 林風眠藝術初探 / 張大千</h2>
+                        <p>南畫廊</p>
+                        <div class="follow_btn">
+                            <div class="twitter"></div><div class="google"></div><div class="fb"></div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <h3 class="text_btn"><a href="#">VIEW&nbsp;ALL&nbsp;(59)</a></h3>
+        <div class="line_02"></div>
+        <!--活動-->
+        <div class="box">
+            <h1 class="text_center">相關活動</h1>
+                <div class="row_03">
+                          <div class="grid">
+                              <div class="photo"><img src="" alt=""></div>
+                              <span class="text_left">
+                                  <div class="text_box" style="text-align:left;">亞太聯展<br>香港<br>2014-6-9~20156-3</div>
+                              </span>
+                          </div>
+                          <div class="grid">
+                              <div class="photo"><img src="" alt=""></div>
+                              <span class="text_left">
+                                  <div class="text_box" style="text-align:left;">亞太聯展<br>香港<br>2014-6-9~20156-3</div>
+                              </span>
+                          </div>
+                          <div class="grid">
+                              <div class="photo"><img src="" alt=""></div>
+                              <span class="text_left">
+                                  <div class="text_box" style="text-align:left;">亞太聯展<br>香港<br>2014-6-9~20156-3</div>
+                              </span>
+                          </div>
+                      <div class="clear"></div>
+                </div>
+        </div>
+        <h3 class="text_btn"><a href="#">VIEW&nbsp;ALL&nbsp;(59)</a></h3>
+    <div id="gotop"></div>
+    </section>
+
+</body>
+       <footer>
+      <div class="footer_link">
+          <div class="box">
+              <a class="text_mode" href="#"><span class="one">聯絡</span><span class="two">Contact</span></a>
+              <a class="text_mode" href="#"><span class="one">蒐集</span><span class="two">蒐集</span></a>
+              <a class="text_mode" href="#"><span class="one">通識</span><span class="two">通識</span></a>
+              <a class="text_mode" href="#"><span class="one">關於</span><span class="two">關於</span></a>
+              <a class="text_mode" href="#"><span class="one">成為夥伴</span><span class="two">成為夥伴</span></a>
+              <a class="text_mode" href="#"><span class="one">隱私權</span><span class="two">隱私權</span></a>
+              <a class="text_mode" href="#"><span class="one">訂閱/取消電子報</span><span class="two">訂閱/取消電子報</span></a>
+              <div class="mail_input_box">mail<input type="text" class="mail_input"></div>
+          </div>
+      </div>
+      <div class="copyright">
+          <div class="box">
+              <div class="text">© 2015 artapei 版權所有</div>
+              <a href="" target=""><div class="yt"></div></a>  
+              <a href="" target=""><div class="tw"></div></a>
+              <a href="" target=""><div class="google"></div></a>
+              <a href="" target=""><div class="fb"></div></a>
+          </div>
+      </div>
+    </footer>
+
+</html>

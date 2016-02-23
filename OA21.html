@@ -1,0 +1,517 @@
+<!doctype html>
+<html debug="true" lang="zh_tw">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1200"/>
+<title>artaipei</title><!--網頁標題-->
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/jquery.selectbox.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<!--pinterest_boxs-->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.masonry.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $('.pinterest_boxs').imagesLoaded(function(){
+            $('.pinterest_boxs').masonry({        
+                itemSelector: '.pinterest_content',
+                columnWidth: 300,
+                singleMode: false,
+                animate:true
+            });
+        });
+    });
+</script>
+<!--selectbox-->
+<script type="text/javascript" src="js/jquery.selectbox-0.2.js"></script>
+<script type="text/javascript">
+		$(function () {
+			$(".select_style_one").selectbox();
+		});
+</script>
+<!--top_menu-->
+<script type='text/javascript' src="jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.menu.js"></script>
+<!--gotop-->
+<script type="text/javascript" src="js/jquery.gotop.js"></script>   
+<!--顯示隱藏按鈕-->
+<script type="text/javascript" language="javascript">
+function showHide() {
+var ele = document.getElementById("show_share");
+if(ele.style.display == "block") {
+ele.style.display = "none";
+}
+else {
+ele.style.display = "block";
+}
+}
+
+function showHide1() {
+var ele = document.getElementById("show_share1");
+if(ele.style.display == "block") {
+ele.style.display = "none";
+}
+else {
+ele.style.display = "block";
+}
+}
+    
+function showHide() {
+var ele = document.getElementById("show_share");
+if(ele.style.display == "block") {
+ele.style.display = "none";
+}
+else {
+ele.style.display = "block";
+}
+}
+
+function showHide1() {
+var ele = document.getElementById("show_share1");
+if(ele.style.display == "block") {
+ele.style.display = "none";
+}
+else {
+ele.style.display = "block";
+}
+}
+</script>       
+    
+    
+     <header>
+        <div class="top_menu">
+            <div class="box">
+              <a href="" target=""><div class="logo"></div></a>
+              <a href="" target=""><div class="login"></div></a>
+              <a href="" target=""><div class="card"></div></a>
+              <a href="" target=""><div class="car"></div></a>
+              <a href="" target=""><div class="search"></div></a>
+              <a href="" target=""><div class="menu"></div></a> 
+            </div>
+        </div>
+    </header>
+    <section class="content">
+        <div class="box text_center">
+            <img src="images/demo_photo/photo_23.jpg" alt="">
+            <div class="margin_top_bottom_small">
+                <button type="button">立即購買</button>
+                <button type="share" onclick="return showHide();">分&nbsp;享</button>
+                <div id="show_share" style="display:none;">
+                    <div class="follow_btn" style="margin-left:150px;">
+                        <div class="twitter"></div>
+                        <div class="google"></div>
+                        <div class="fb"></div>
+                        <div class="follow"></div>
+                    </div>
+                </div>
+                <div class="box text_right">
+                    <div class="slider_dot"></div>
+                    <div class="slider_dot"></div>
+                </div> 
+            </div>
+            
+        </div>
+        <div class="line_02"></div>
+        <div class="summary_box">
+            <div class="table">
+                            <div class="tr">
+                                <div class="th">藝術家</div>
+                                <div class="td">王大明 win do min ,2014</div>
+                            </div>
+                            <div class="tr">
+                                <div class="th">題目</div>
+                                <div class="td">海 sea ,2014</div>
+                            </div>
+                            <div class="tr">
+                                <div class="th">編號</div>
+                                <div class="td">新經典文化</div>
+                            </div>
+                            <div class="tr">
+                                <div class="th">媒材</div>
+                                <div class="td">油彩 oid</div>
+                            </div>
+                            <div class="tr">
+                                <div class="th">版</div>
+                                <div class="td">30 / 100</div>
+                            </div>
+                            <div class="tr">
+                                <div class="th">尺寸</div>
+                                <div class="td">20x80cm</div>
+                            </div>
+                            <div class="tr">
+                                <div class="th">圖庫</div>
+                                <div class="td">南畫廊 可售作品</div>
+                            </div>
+                            <div class="tr">
+                                <div class="th">價格</div>
+                                <div class="td">售出 sold ,國家美術館收藏</div>
+                            </div>
+                            <div class="tr">
+                                <div class="th">聯絡</div>
+                                <div class="td">南畫廊</div>
+                            </div>
+                            <div class="tr">
+                                <div class="th"></div>
+                                <div class="td"><a href="">交易紀錄</a></div>
+                            </div>
+                            
+                </div>
+            <div class="plus" style="margin:50px auto;">+</div>
+        </div>
+        <div class="line_02"></div>
+        
+        <!--作品-->
+        <div class="box">
+            <div class="select_box_one">
+                <div class="float_right">
+                    <select name="select_works_all" class="select_style_one" tabindex="1">
+                        <option value="">全部</option>
+                        <optgroup label="材質">
+                            <option value="1">繪畫(number)</option>
+                            <option value="2">雕塑</option>
+                            <option value="3">畫廊</option>
+                        </optgroup>
+                        <optgroup label="畫廊">
+                            <option value="4">南畫廊</option>
+                            <option value="5">畫廊邁克爾·揚森</option>
+                            <option value="6">GALLERI Brandstrup</option>
+                            <option value="7">蘇珊Vielmetter洛杉磯項目</option>
+                        </optgroup>
+                        <optgroup label="機構">
+                            <option value="8">北畫會</option>
+                            <option value="9">洛杉磯游牧司</option>
+                        </optgroup>
+                        <optgroup label="年代">
+                            <option value="11">1990S</option>
+                        </optgroup>
+                        <optgroup label="服務">
+                            <option value="10">購買</option>
+                            <option value="11">詢價</option>
+                            <option value="12">聯絡</option>
+                            <option value="13">租賃</option>
+                            <option value="14">已售</option>
+                        </optgroup>
+                    </select>
+                </div>
+                
+                <div class="float_right">
+                    <select name="select_works_sequence" class="select_style_one" tabindex="1">
+                            <option value="1">價錢由高到低</option>
+                            <option value="2">價錢由低到高</option>
+                    </select>
+                </div>
+                  
+            </div>
+        </div>
+         <div class="pinterest_boxs">
+                <div class="pinterest_content">
+                     <div class="photo">
+                         <a href="" target=""><div class="heart"></div></a>
+                         <img src="images/demo_photo/photo_02.jpg" alt="">
+                    </div>
+                     <div class="text_box">
+                            <a href=""><div class="name">張庭鈞<span class="margin_left_small">Chang Ting Chun</span></div></a>
+                            台北, 1920~2015<br><span class="gray_normal" ><a href="" >Nan Gallery</a></span><br>$30,000
+                    </div>
+                    <a href="" target=""><div class="text_btn_one">購&nbsp;&nbsp;&nbsp;買</div></a>
+                    <div class="clear"></div>
+                </div>
+                <div class="pinterest_content">
+                     <div class="photo">
+                         <a href="" target=""><div class="heart"></div></a>
+                         <img src="images/demo_photo/photo_01.jpg" alt="">
+                    </div>
+                     <div class="text_box">
+                            <a href=""><div class="name">張庭鈞<span class="margin_left_small">Chang Ting Chun</span></div></a>
+                            台北, 1920~2015<br><span class="gray_normal" ><a href="" >Nan Gallery</a></span><br>$30,000
+                    </div>
+                    <a href="" target=""><div class="text_btn_one">購&nbsp;&nbsp;&nbsp;買</div></a>
+                    <div class="clear"></div>
+                </div>
+                <div class="pinterest_content">
+                     <div class="photo">
+                         <a href="" target=""><div class="heart"></div></a>
+                         <img src="images/demo_photo/photo_04.jpg" alt="">
+                    </div>
+                     <div class="text_box">
+                            <a href=""><div class="name">張庭鈞<span class="margin_left_small">Chang Ting Chun</span></div></a>
+                            台北, 1920~2015<br><span class="gray_normal" ><a href="" >Nan Gallery</a></span><br>$30,000
+                    </div>
+                    <a href="" target=""><div class="text_btn_one">購&nbsp;&nbsp;&nbsp;買</div></a>
+                    <div class="clear"></div>
+                </div>
+                 <div class="pinterest_content">
+                     <div class="photo">
+                         <a href="" target=""><div class="heart"></div></a>
+                         <img src="images/demo_photo/photo_01.jpg" alt="">
+                    </div>
+                     <div class="text_box">
+                            <a href=""><div class="name">張庭鈞<span class="margin_left_small">Chang Ting Chun</span></div></a>
+                            台北, 1920~2015<br><span class="gray_normal" ><a href="" >Nan Gallery</a></span><br>$30,000
+                    </div>
+                     <a href="" target=""><div class="text_btn_one">購&nbsp;&nbsp;&nbsp;買</div></a>
+                    <div class="clear"></div>
+                </div>
+                <div class="pinterest_content">
+                     <div class="photo">
+                         <a href="" target=""><div class="heart"></div></a>
+                         <img src="images/demo_photo/photo_01.jpg" alt="">
+                    </div>
+                     <div class="text_box">
+                            <a href=""><div class="name">張庭鈞<span class="margin_left_small">Chang Ting Chun</span></div></a>
+                            台北, 1920~2015<br><span class="gray_normal" ><a href="" >Nan Gallery</a></span><br>$30,000
+                    </div>
+                    <a href="" target=""><div class="text_btn_one">購&nbsp;&nbsp;&nbsp;買</div></a>
+                    <div class="clear"></div>
+                </div>
+                <div class="pinterest_content">
+                     <div class="photo">
+                         <a href="" target=""><div class="heart"></div></a>
+                         <img src="images/demo_photo/photo_01.jpg" alt="">
+                    </div>
+                     <div class="text_box">
+                            <a href=""><div class="name">張庭鈞<span class="margin_left_small">Chang Ting Chun</span></div></a>
+                            台北, 1920~2015<br><span class="gray_normal" ><a href="" >Nan Gallery</a></span><br>$30,000
+                    </div>
+                    <a href="" target=""><div class="text_btn_one">購&nbsp;&nbsp;&nbsp;買</div></a>
+                    <div class="clear"></div>
+                </div>
+                <div class="pinterest_content">
+                     <div class="photo">
+                         <a href="" target=""><div class="heart"></div></a>
+                         <img src="images/demo_photo/photo_03.jpg" alt="">
+                    </div>
+                     <div class="text_box">
+                            <a href=""><div class="name">張庭鈞<span class="margin_left_small">Chang Ting Chun</span></div></a>
+                            台北, 1920~2015<br><span class="gray_normal" ><a href="" >Nan Gallery</a></span><br>$30,000
+                    </div>
+                    <a href="" target=""><div class="text_btn_one">購&nbsp;&nbsp;&nbsp;買</div></a>
+                    <div class="clear"></div>
+                </div>
+               <div class="pinterest_content">
+                     <div class="photo">
+                         <a href="" target=""><div class="heart"></div></a>
+                         <img src="images/demo_photo/photo_02.jpg" alt="">
+                    </div>
+                     <div class="text_box">
+                            <a href=""><div class="name">張庭鈞<span class="margin_left_small">Chang Ting Chun</span></div></a>
+                            台北, 1920~2015<br><span class="gray_normal" ><a href="" >Nan Gallery</a></span><br>$30,000
+                    </div>
+                   <a href="" target=""><div class="text_btn_one">購&nbsp;&nbsp;&nbsp;買</div></a>
+                    <div class="clear"></div>
+                </div>
+	     </div>
+        <h3 class="text_btn"><a href="#">VIEW&nbsp;ALL&nbsp;(59)</a></h3>
+        <div class="line_02"></div>
+
+        <!--相關報導-->
+        <div class="box">
+            <h1 class="text_center">相關報導</h1>
+                <div class="artists_news">
+                    <div class="float_box">
+                        <div class="photo"></div>
+                        2015 - 04-16  13：07
+                        <h2>在山水畫與風景畫之間： 林風眠藝術初探 / 張大千</h2>
+                        <p>南畫廊</p>
+                        <div class="follow_btn">
+                            <div class="twitter"></div><div class="google"></div><div class="fb"></div>
+                        </div>
+                    </div>
+                    <div class="float_box">
+                        <div class="photo"></div>
+                        2015 - 04-16  13：07
+                        <h2>在山水畫與風景畫之間： 林風眠藝術初探 / 張大千</h2>
+                        <p>南畫廊</p>
+                        <div class="follow_btn">
+                            <div class="twitter"></div><div class="google"></div><div class="fb"></div>
+                        </div>
+                    </div>
+                    <div class="float_box">
+                        <div class="photo"></div>
+                        2015 - 04-16  13：07
+                        <h2>在山水畫與風景畫之間： 林風眠藝術初探 / 張大千</h2>
+                        <p>南畫廊</p>
+                        <div class="follow_btn">
+                            <div class="twitter"></div><div class="google"></div><div class="fb"></div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <h3 class="text_btn"><a href="#">VIEW&nbsp;ALL&nbsp;(59)</a></h3>
+        <div class="line_02"></div>
+        
+         
+        <!--作品-->
+        <div class="box">
+            <h1 class="text_center">衍生商品</h1>
+            <div class="select_box_one">
+                <div class="float_right">
+                    <select name="select_works_all" class="select_style_one" tabindex="1">
+                        <option value="">全部</option>
+                        <optgroup label="材質">
+                            <option value="1">繪畫(number)</option>
+                            <option value="2">雕塑</option>
+                            <option value="3">畫廊</option>
+                        </optgroup>
+                        <optgroup label="畫廊">
+                            <option value="4">南畫廊</option>
+                            <option value="5">畫廊邁克爾·揚森</option>
+                            <option value="6">GALLERI Brandstrup</option>
+                            <option value="7">蘇珊Vielmetter洛杉磯項目</option>
+                        </optgroup>
+                        <optgroup label="機構">
+                            <option value="8">北畫會</option>
+                            <option value="9">洛杉磯游牧司</option>
+                        </optgroup>
+                        <optgroup label="年代">
+                            <option value="11">1990S</option>
+                        </optgroup>
+                        <optgroup label="服務">
+                            <option value="10">購買</option>
+                            <option value="11">詢價</option>
+                            <option value="12">聯絡</option>
+                            <option value="13">租賃</option>
+                            <option value="14">已售</option>
+                        </optgroup>
+                    </select>
+                </div>
+                
+                <div class="float_right">
+                    <select name="select_works_sequence" class="select_style_one" tabindex="1">
+                            <option value="1">價錢由高到低</option>
+                            <option value="2">價錢由低到高</option>
+                    </select>
+                </div>
+                  
+            </div>
+        </div>
+         <div class="pinterest_boxs">
+                <div class="pinterest_content">
+                     <div class="photo">
+                         <a href="" target=""><div class="heart"></div></a>
+                         <img src="images/demo_photo/photo_02.jpg" alt="">
+                    </div>
+                     <div class="text_box">
+                            <a href=""><div class="name">張庭鈞<span class="margin_left_small">Chang Ting Chun</span></div></a>
+                            台北, 1920~2015<br><span class="gray_normal" ><a href="" >Nan Gallery</a></span><br>$30,000
+                    </div>
+                    <a href="" target=""><div class="text_btn_one">購&nbsp;&nbsp;&nbsp;買</div></a>
+                    <div class="clear"></div>
+                </div>
+                <div class="pinterest_content">
+                     <div class="photo">
+                         <a href="" target=""><div class="heart"></div></a>
+                         <img src="images/demo_photo/photo_01.jpg" alt="">
+                    </div>
+                     <div class="text_box">
+                            <a href=""><div class="name">張庭鈞<span class="margin_left_small">Chang Ting Chun</span></div></a>
+                            台北, 1920~2015<br><span class="gray_normal" ><a href="" >Nan Gallery</a></span><br>$30,000
+                    </div>
+                    <a href="" target=""><div class="text_btn_one">購&nbsp;&nbsp;&nbsp;買</div></a>
+                    <div class="clear"></div>
+                </div>
+                <div class="pinterest_content">
+                     <div class="photo">
+                         <a href="" target=""><div class="heart"></div></a>
+                         <img src="images/demo_photo/photo_04.jpg" alt="">
+                    </div>
+                     <div class="text_box">
+                            <a href=""><div class="name">張庭鈞<span class="margin_left_small">Chang Ting Chun</span></div></a>
+                            台北, 1920~2015<br><span class="gray_normal" ><a href="" >Nan Gallery</a></span><br>$30,000
+                    </div>
+                    <a href="" target=""><div class="text_btn_one">購&nbsp;&nbsp;&nbsp;買</div></a>
+                    <div class="clear"></div>
+                </div>
+                 <div class="pinterest_content">
+                     <div class="photo">
+                         <a href="" target=""><div class="heart"></div></a>
+                         <img src="images/demo_photo/photo_01.jpg" alt="">
+                    </div>
+                     <div class="text_box">
+                            <a href=""><div class="name">張庭鈞<span class="margin_left_small">Chang Ting Chun</span></div></a>
+                            台北, 1920~2015<br><span class="gray_normal" ><a href="" >Nan Gallery</a></span><br>$30,000
+                    </div>
+                     <a href="" target=""><div class="text_btn_one">購&nbsp;&nbsp;&nbsp;買</div></a>
+                    <div class="clear"></div>
+                </div>
+                <div class="pinterest_content">
+                     <div class="photo">
+                         <a href="" target=""><div class="heart"></div></a>
+                         <img src="images/demo_photo/photo_01.jpg" alt="">
+                    </div>
+                     <div class="text_box">
+                            <a href=""><div class="name">張庭鈞<span class="margin_left_small">Chang Ting Chun</span></div></a>
+                            台北, 1920~2015<br><span class="gray_normal" ><a href="" >Nan Gallery</a></span><br>$30,000
+                    </div>
+                    <a href="" target=""><div class="text_btn_one">購&nbsp;&nbsp;&nbsp;買</div></a>
+                    <div class="clear"></div>
+                </div>
+                <div class="pinterest_content">
+                     <div class="photo">
+                         <a href="" target=""><div class="heart"></div></a>
+                         <img src="images/demo_photo/photo_01.jpg" alt="">
+                    </div>
+                     <div class="text_box">
+                            <a href=""><div class="name">張庭鈞<span class="margin_left_small">Chang Ting Chun</span></div></a>
+                            台北, 1920~2015<br><span class="gray_normal" ><a href="" >Nan Gallery</a></span><br>$30,000
+                    </div>
+                    <a href="" target=""><div class="text_btn_one">購&nbsp;&nbsp;&nbsp;買</div></a>
+                    <div class="clear"></div>
+                </div>
+                <div class="pinterest_content">
+                     <div class="photo">
+                         <a href="" target=""><div class="heart"></div></a>
+                         <img src="images/demo_photo/photo_03.jpg" alt="">
+                    </div>
+                     <div class="text_box">
+                            <a href=""><div class="name">張庭鈞<span class="margin_left_small">Chang Ting Chun</span></div></a>
+                            台北, 1920~2015<br><span class="gray_normal" ><a href="" >Nan Gallery</a></span><br>$30,000
+                    </div>
+                    <a href="" target=""><div class="text_btn_one">購&nbsp;&nbsp;&nbsp;買</div></a>
+                    <div class="clear"></div>
+                </div>
+               <div class="pinterest_content">
+                     <div class="photo">
+                         <a href="" target=""><div class="heart"></div></a>
+                         <img src="images/demo_photo/photo_02.jpg" alt="">
+                    </div>
+                     <div class="text_box">
+                            <a href=""><div class="name">張庭鈞<span class="margin_left_small">Chang Ting Chun</span></div></a>
+                            台北, 1920~2015<br><span class="gray_normal" ><a href="" >Nan Gallery</a></span><br>$30,000
+                    </div>
+                   <a href="" target=""><div class="text_btn_one">購&nbsp;&nbsp;&nbsp;買</div></a>
+                    <div class="clear"></div>
+                </div>
+	     </div>
+        <h3 class="text_btn"><a href="#">VIEW&nbsp;ALL&nbsp;(59)</a></h3>
+        
+    <div id="gotop"></div>
+    </section>
+
+</body>
+       <footer>
+      <div class="footer_link">
+          <div class="box">
+              <a class="text_mode" href="#"><span class="one">聯絡</span><span class="two">Contact</span></a>
+              <a class="text_mode" href="#"><span class="one">蒐集</span><span class="two">蒐集</span></a>
+              <a class="text_mode" href="#"><span class="one">通識</span><span class="two">通識</span></a>
+              <a class="text_mode" href="#"><span class="one">關於</span><span class="two">關於</span></a>
+              <a class="text_mode" href="#"><span class="one">成為夥伴</span><span class="two">成為夥伴</span></a>
+              <a class="text_mode" href="#"><span class="one">隱私權</span><span class="two">隱私權</span></a>
+              <a class="text_mode" href="#"><span class="one">訂閱/取消電子報</span><span class="two">訂閱/取消電子報</span></a>
+              <div class="mail_input_box">mail<input type="text" class="mail_input"></div>
+          </div>
+      </div>
+      <div class="copyright">
+          <div class="box">
+              <div class="text">© 2015 artapei 版權所有</div>
+              <a href="" target=""><div class="yt"></div></a>  
+              <a href="" target=""><div class="tw"></div></a>
+              <a href="" target=""><div class="google"></div></a>
+              <a href="" target=""><div class="fb"></div></a>
+          </div>
+      </div>
+    </footer>
+
+</html>
